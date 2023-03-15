@@ -76,8 +76,18 @@ if (c == max):
 
 #Zad.12
 numbers = [4, 6.7, 2, -7, -8.33, 0.01]
-for i in numbers:
-    #numbers[i] = pow(numbers[i], 2)
+for i in range(len(numbers)):
+    numbers[i] = pow(numbers[i], 2)
 
 print(numbers)
 print('')
+
+#Zad.13
+iterator = 10
+integers = []
+temp = 0
+while iterator > 0:
+    temp = input('Podaj liczbe calkowita: ')
+    #if temp % 2 == 0:
+        #integers.append(temp)
+    iterator -= 1

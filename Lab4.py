@@ -67,6 +67,7 @@ class CiagArytmetyczny:
     def policz_sume(self):
         suma = 0
         #for i in self.wartosci:
+            # suma +=int(i)
         for i in range(len(self.wartosci)):
             suma += int(self.wartosci[i])
         return suma

@@ -87,8 +87,8 @@ iterator = 10
 integers = []
 temp = 0
 while iterator > 0:
-    temp = input('Podaj liczbe calkowita: ')
-    #if temp % 2 == 0:
-        #integers.append(temp)
+    temp = int(input('Podaj liczbe calkowita: '))
+    if temp % 2 == 0:
+        integers.append(temp)
     iterator -= 1
 

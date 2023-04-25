@@ -59,10 +59,10 @@ z = np.indices((5, 3))
 print(z)
 print(z[0][1][2])
 #podobnie jak w MATLAB-ie możemy tworzyć macierze diagonalne
-mat_diag = np.diag([a for a in range(5)], k=1)
-mat_diag2 = np.diag([a for a in range(5)], k=-2)
-print(mat_diag)
-print(mat_diag2)
+#mat_diag = np.diag([a for a in range(5)], k=1)
+#mat_diag2 = np.diag([a for a in range(5)], k=-2)
+#print(mat_diag)
+#print(mat_diag2)
 
 znaki = b'ogolna'
 z1 = np.frombuffer(znaki, dtype='S1')
@@ -133,7 +133,23 @@ print(arr3)
 
 #Zad 4
 def arraypow(a, n):
-    #return np.logspace(, a**n, n)
+    return 1 #np.logspace(, a**n, n)
 
 #arr4 = arraypow(3, 7)
 #print(arr4)
+
+#Zad 5
+def generate_mat_diag(vector_range):
+    vec = [a for a in reversed(range(vector_range))]
+    mat_diag = np.diag(vec, k=2)
+    return vec, mat_diag
+
+vec5, mat_diag5 = generate_mat_diag(7)
+print(vec5)
+print(mat_diag5)
+
+#Zad 6
+a6 = np.array([' ' for i in range(49)]).reshape(7, 7)
+a6[2] = list(reversed('olsztyn'))
+a6[5] = list('galowy')
+print(a6)

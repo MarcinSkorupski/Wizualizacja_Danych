@@ -114,7 +114,7 @@ print(y)
 
 
 #Zad 1
-arr1 = np.arange(4, 81, 4)
+arr1 = np.arange(0, 81, 4)
 print(arr1)
 
 #Zad 2
@@ -133,7 +133,7 @@ print(arr3)
 
 #Zad 4
 def arraypow(a, n):
-    return 1 #np.logspace(, a**n, n)
+    return np.logspace(1, n, a, a)
 
 #arr4 = arraypow(3, 7)
 #print(arr4)
@@ -151,5 +151,5 @@ print(mat_diag5)
 #Zad 6
 a6 = np.array([' ' for i in range(49)]).reshape(7, 7)
 a6[2] = list(reversed('olsztyn'))
-a6[5] = list('galowy')
+a6[:,5] = list('balanga')
 print(a6)

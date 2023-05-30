@@ -61,6 +61,20 @@ b = np.array([np.arange(3), np.arange(3), np.arange(3)])
 print(b)
 print(b.shape)
 print("")
+#przekształcamy ją na macierz 3x2
+c = b.reshape((3,2))
+print(c)
+print(c.shape)
+print("")
+#spłaszczamy macierz zyskując pierwotny kształt ze zmiennej a
+d = c.ravel()
+print(d)
+print(d.shape)
+print("")
+#transpozycja macierzy
+e = b.T
+print(e)
+print(e.shape)
 
 
 #Zad 1
